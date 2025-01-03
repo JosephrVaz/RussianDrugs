@@ -23,11 +23,11 @@ Random Forest Classifier with a spacy pipeline
 Text Categorizer
 
 # Preprocessing
-Removed stop word
-Removed punctuation
-Removed numbers 
-Lemmatization 
-Tokenization (for ml model only)
+- Removed stop word
+- Removed punctuation
+- Removed numbers 
+- Lemmatization 
+- Tokenization (for ml model only)
 
 # Training
 We load the Russian spacy model. For the ml model , we process and tokenize the text. Then in a spacy pipeline we choose TF IDF as the vectorizer and random forest classifier as the classifier. We split the data with a test size of 0.2.  Hyperparameter tuning for ml model, we test the effect of different depths and estimators.
