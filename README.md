@@ -35,3 +35,7 @@ For the spacy model, we set up the textcat with a single label cnn with a custom
 
 # Results
 The ML model has a test accuracy of 84 and a train accuracy of 92 percent, indicating overfitting. After hyperparameter tuning the test accuracy increased to 85 percent if there were 200 estimators and a depth of 20. The spacy model had a test accuracy of 83 and a train accuracy of 100, indicating overfitting. After hyperparameter tuning test accuracy increased to 84 if dropout was 0.3 with a batch size of 32. Both model f1,recall and precision were well within range of each other and balanced. Hyperparameter tuning seemed to help the model increase its accuracy but still the root cause was not fixed. The root problem of overfitting was caused by the limited amount of data in the dataset. If we used SMOTE or acquired more data, results would have been higher with no overfitting.  Performance wise, ML model was faster in execution and training compared to the spacy model. This is most likely due to configurations that were initialized in the configurations in the text categorizer. Overall, if the problem of overfitting is solved by oversampling, both models will be suitable for the given task of classifying drug reviews.
+
+## License
+This project is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0) License. See the [LICENSE](./LICENSE) file for details.
+
